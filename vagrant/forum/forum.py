@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 # 
 # A buggy web service in need of a database.
- 
+
 from flask import Flask, request, redirect, url_for
 
-from forumdb import get_posts, add_post
+from forumdb_pg import get_posts, add_post
 
 app = Flask(__name__)
 
